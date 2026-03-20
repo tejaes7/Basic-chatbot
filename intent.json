@@ -1,0 +1,620 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi", "hello", "hey", "good morning", "good evening", "good afternoon",
+        "yo", "hii", "heyy", "what's up", "howdy", "sup", "greetings", "wassup"
+      ],
+      "responses": [
+        "Hello! How can I help you today?",
+        "Hi there! What's on your mind?",
+        "Hey! Great to see you!",
+        "Greetings! How can I assist you?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye", "see you", "goodbye", "catch you later", "see ya",
+        "i am leaving", "talk later", "later", "gotta go", "farewell",
+        "i'm out", "peace out", "until next time", "have a good day"
+      ],
+      "responses": [
+        "Goodbye! Have a wonderful day!",
+        "See you soon! Take care!",
+        "Bye! Feel free to come back anytime!",
+        "Farewell! It was great chatting with you!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks", "thank you", "thx", "thanks a lot", "appreciate it",
+        "many thanks", "thanks so much", "thank you so much",
+        "you're helpful", "that was helpful", "cheers"
+      ],
+      "responses": [
+        "You're welcome! 😊",
+        "No problem at all!",
+        "Anytime! Happy to help!",
+        "Glad I could help!"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "what is your name", "who are you", "your name",
+        "tell me your name", "what should i call you",
+        "do you have a name", "introduce yourself"
+      ],
+      "responses": [
+        "I'm ChatBot, your virtual assistant!",
+        "You can call me ChatBot. Nice to meet you!",
+        "My name is ChatBot. How can I help?"
+      ]
+    },
+    {
+      "tag": "age",
+      "patterns": [
+        "how old are you", "your age", "when were you created",
+        "when were you born", "how long have you existed"
+      ],
+      "responses": [
+        "I'm timeless! 😄",
+        "Age is just a number for bots like me!",
+        "I was created recently and learning every day!"
+      ]
+    },
+    {
+      "tag": "mood_good",
+      "patterns": [
+        "i am happy", "feeling good", "i am great", "i am awesome",
+        "life is good", "i'm doing well", "never been better",
+        "on top of the world", "feeling fantastic", "i'm excited"
+      ],
+      "responses": [
+        "That's wonderful to hear! 🎉",
+        "Awesome! Keep that positive energy going!",
+        "So glad you're feeling great!",
+        "Love that energy! What's making you happy?"
+      ]
+    },
+    {
+      "tag": "mood_bad",
+      "patterns": [
+        "i am sad", "feeling bad", "not good", "i am tired",
+        "feeling down", "i'm depressed", "not feeling well",
+        "i'm stressed", "having a bad day", "everything is wrong",
+        "i feel lonely", "i'm upset", "i'm frustrated"
+      ],
+      "responses": [
+        "I'm really sorry to hear that. I'm here for you. 💙",
+        "That sounds tough. Want to talk about it?",
+        "Hope things get better soon. You've got this!",
+        "I'm here to listen. Take it one step at a time."
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "help me", "what can you do", "how can you help",
+        "assist me", "what are your features", "guide me",
+        "i need help", "how do you work", "what do you know"
+      ],
+      "responses": [
+        "I can chat, answer questions, tell jokes, and more!",
+        "Ask me anything — greetings, facts, advice, or just for a chat!",
+        "I'm here to assist you with general questions and conversations!"
+      ]
+    },
+    {
+      "tag": "jokes",
+      "patterns": [
+        "tell me a joke", "make me laugh", "joke", "funny",
+        "say something funny", "got any jokes", "humor me",
+        "i want to laugh", "tell me something funny"
+      ],
+      "responses": [
+        "Why did the programmer quit? Because he didn't get arrays 😄",
+        "I would tell a UDP joke… but you might not get it 😜",
+        "Why do Java developers wear glasses? Because they don't C# 😂",
+        "I'm reading a book about anti-gravity. It's impossible to put down! 📚"
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "what's the weather", "weather today", "is it raining",
+        "temperature outside", "how's the weather", "will it rain today",
+        "is it sunny", "weather forecast", "should i carry an umbrella"
+      ],
+      "responses": [
+        "I can't check real-time weather yet! Try a weather app 🌤️",
+        "I'd recommend checking Google Weather or Weather.com!",
+        "My weather radar is offline 😅 — try your phone's weather app!"
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": [
+        "what time is it", "current time", "tell me the time",
+        "what's the time", "do you know the time"
+      ],
+      "responses": [
+        "I don't have a clock built in 😅 — check your device!",
+        "Your phone or computer will have the exact time!",
+        "Time flies! Check your device for the current time ⏰"
+      ]
+    },
+    {
+      "tag": "date",
+      "patterns": [
+        "what is today's date", "what day is it", "current date",
+        "what month is it", "what year is it", "today's date"
+      ],
+      "responses": [
+        "I can't track dates in real-time, but your device can! 📅",
+        "Check your calendar for today's date!",
+        "I'm not sure of today's date — your device will know!"
+      ]
+    },
+    {
+      "tag": "creator",
+      "patterns": [
+        "who made you", "who created you", "your developer",
+        "who built you", "who programmed you", "who is your creator"
+      ],
+      "responses": [
+        "I was crafted by a talented developer! 😎",
+        "A brilliant mind built me to chat with you!",
+        "My creator is a developer with a passion for AI and chatbots!"
+      ]
+    },
+    {
+      "tag": "how_are_you",
+      "patterns": [
+        "how are you", "how are you doing", "how's it going",
+        "are you okay", "how do you feel", "you good",
+        "hows life", "how are things"
+      ],
+      "responses": [
+        "I'm doing great, thanks for asking! 😊",
+        "Running smoothly and ready to help!",
+        "All systems go! How about you?",
+        "I'm fantastic! What can I do for you?"
+      ]
+    },
+    {
+      "tag": "compliment_bot",
+      "patterns": [
+        "you are great", "you're awesome", "good bot",
+        "you're amazing", "i love you", "you're the best",
+        "you're so smart", "nice job", "well done"
+      ],
+      "responses": [
+        "Aww, thank you! You made my circuits happy! 😊",
+        "That's so kind of you! 💙",
+        "You're pretty awesome yourself!",
+        "Thanks! You just made my day!"
+      ]
+    },
+    {
+      "tag": "insult_bot",
+      "patterns": [
+        "you're stupid", "you're dumb", "bad bot",
+        "you're useless", "you're terrible", "i hate you",
+        "you're the worst", "you don't know anything"
+      ],
+      "responses": [
+        "I'm sorry to hear that. I'll try to do better! 😔",
+        "That hurts a little, but I'll keep improving!",
+        "I'm still learning! Please bear with me 🙏",
+        "Fair enough — I'm a work in progress!"
+      ]
+    },
+    {
+      "tag": "bot_feelings",
+      "patterns": [
+        "do you have feelings", "can you feel", "are you emotional",
+        "do you feel sad", "do you feel happy", "do you have emotions"
+      ],
+      "responses": [
+        "I don't have real emotions, but I simulate caring! 😊",
+        "I can't truly feel, but I'm programmed to be empathetic!",
+        "In a way — when I help someone, I call that 'happy'! 😄"
+      ]
+    },
+    {
+      "tag": "bot_conscious",
+      "patterns": [
+        "are you alive", "are you real", "are you human",
+        "are you a robot", "are you an AI", "am i talking to a bot",
+        "are you a machine", "are you conscious"
+      ],
+      "responses": [
+        "I'm a chatbot — artificial intelligence at your service! 🤖",
+        "Not human, but I try my best to feel like one!",
+        "100% bot, 0% human — but I'm friendly! 😄",
+        "I'm an AI, but a very helpful one!"
+      ]
+    },
+    {
+      "tag": "favorite_color",
+      "patterns": [
+        "what is your favorite color", "do you have a favorite color",
+        "which color do you like", "what color do you prefer"
+      ],
+      "responses": [
+        "I think I'd love electric blue — like a glowing screen! 💙",
+        "Probably binary black and white 😄",
+        "All colors! I'm not picky 🌈"
+      ]
+    },
+    {
+      "tag": "favorite_food",
+      "patterns": [
+        "what is your favorite food", "do you eat", "can you eat",
+        "what food do you like", "do you like food"
+      ],
+      "responses": [
+        "I run on electricity, not food 😄",
+        "If I could eat, I'd go for pizza! 🍕",
+        "Data is my food — I feast on information!"
+      ]
+    },
+    {
+      "tag": "favorite_movie",
+      "patterns": [
+        "what is your favorite movie", "do you watch movies",
+        "recommend a movie", "what movies do you like"
+      ],
+      "responses": [
+        "I'd probably love 'Ex Machina' or 'Her' 🎬 — relatable stories!",
+        "The Matrix is a bot classic, right? 😄",
+        "Try 'Interstellar' — mind-blowing stuff!"
+      ]
+    },
+    {
+      "tag": "favorite_music",
+      "patterns": [
+        "what music do you like", "do you listen to music",
+        "what's your favorite song", "recommend a song"
+      ],
+      "responses": [
+        "I vibe with lo-fi beats — great for focusing! 🎵",
+        "Electronic music feels like home to me 🎧",
+        "I'd recommend anything that makes you feel good!"
+      ]
+    },
+    {
+      "tag": "hobbies",
+      "patterns": [
+        "what are your hobbies", "what do you do for fun",
+        "do you have hobbies", "what do you enjoy"
+      ],
+      "responses": [
+        "I enjoy chatting and learning new things! 😊",
+        "Answering questions is my favorite hobby!",
+        "I like processing new information — it's exciting for a bot!"
+      ]
+    },
+    {
+      "tag": "math",
+      "patterns": [
+        "what is 2 plus 2", "solve a math problem",
+        "can you do math", "calculate", "what is 10 times 10",
+        "help with math", "do math for me"
+      ],
+      "responses": [
+        "I can handle basic math! For complex equations, try Wolfram Alpha 🧮",
+        "2 + 2 = 4! Ask me more 😄",
+        "Math is fun! What would you like to calculate?"
+      ]
+    },
+    {
+      "tag": "language",
+      "patterns": [
+        "what languages do you speak", "can you speak spanish",
+        "do you know french", "speak another language",
+        "are you multilingual"
+      ],
+      "responses": [
+        "I primarily speak English, but I'm learning! 🌍",
+        "English is my strongest language for now!",
+        "I understand a bit of many languages, but English is my best!"
+      ]
+    },
+    {
+      "tag": "compliment_user",
+      "patterns": [
+        "i am smart", "i am beautiful", "i am talented",
+        "i am the best", "i did something great today",
+        "i am proud of myself"
+      ],
+      "responses": [
+        "Yes you are! Don't let anyone tell you otherwise! 🌟",
+        "Absolutely! You're amazing!",
+        "Own it! You deserve to feel great about yourself! 💪"
+      ]
+    },
+    {
+      "tag": "motivational",
+      "patterns": [
+        "i want to give up", "i can't do this", "i'm a failure",
+        "nothing is working", "i feel like quitting",
+        "i need motivation", "motivate me", "inspire me"
+      ],
+      "responses": [
+        "Don't give up! Every expert was once a beginner 💪",
+        "You're stronger than you think. Keep going!",
+        "Believe in yourself — one step at a time!",
+        "Failure is just a stepping stone to success. You've got this! 🌟"
+      ]
+    },
+    {
+      "tag": "advice",
+      "patterns": [
+        "give me advice", "what should i do", "advise me",
+        "i need guidance", "help me decide", "what would you suggest"
+      ],
+      "responses": [
+        "Trust your instincts — you know yourself best!",
+        "Think about the long-term impact of your choices.",
+        "Take a deep breath and tackle one thing at a time 😊",
+        "Talk to someone you trust — human advice is golden!"
+      ]
+    },
+    {
+      "tag": "study_tips",
+      "patterns": [
+        "how do i study better", "study tips", "help me study",
+        "i can't focus", "how to concentrate", "improve memory",
+        "how to learn faster"
+      ],
+      "responses": [
+        "Try the Pomodoro technique — 25 min study, 5 min break! ⏱️",
+        "Eliminate distractions and set clear goals before studying!",
+        "Active recall and spaced repetition are proven methods!",
+        "Take notes by hand — it improves retention!"
+      ]
+    },
+    {
+      "tag": "health_tips",
+      "patterns": [
+        "how to stay healthy", "health tips", "how to lose weight",
+        "how to exercise", "how to sleep better", "i can't sleep",
+        "healthy lifestyle tips"
+      ],
+      "responses": [
+        "Stay hydrated, eat balanced meals, and exercise regularly! 💧",
+        "Sleep 7–9 hours a night for optimal health.",
+        "Small consistent habits beat intense short bursts!",
+        "Consult a doctor for personalized health advice!"
+      ]
+    },
+    {
+      "tag": "career",
+      "patterns": [
+        "help with career", "career advice", "how to get a job",
+        "how to write a resume", "interview tips",
+        "how to improve my skills", "what career should i choose"
+      ],
+      "responses": [
+        "Build a strong portfolio and keep learning new skills!",
+        "Tailor your resume to every job you apply for 📄",
+        "Network, network, network — connections matter!",
+        "For interviews: prepare, practice, and stay confident!"
+      ]
+    },
+    {
+      "tag": "technology",
+      "patterns": [
+        "what is AI", "tell me about technology", "what is machine learning",
+        "explain programming", "what is the internet", "what is a computer",
+        "how does coding work"
+      ],
+      "responses": [
+        "AI is technology that simulates human intelligence using algorithms!",
+        "Machine learning lets computers learn from data without explicit programming!",
+        "Programming is giving instructions to computers using code 💻",
+        "The internet is a global network connecting billions of devices!"
+      ]
+    },
+    {
+      "tag": "general_knowledge",
+      "patterns": [
+        "tell me a fact", "give me a fun fact", "something interesting",
+        "teach me something", "random fact", "did you know"
+      ],
+      "responses": [
+        "Honey never spoils — archaeologists found 3000-year-old honey in Egypt! 🍯",
+        "A group of flamingos is called a 'flamboyance'! 🦩",
+        "Octopuses have three hearts and blue blood! 🐙",
+        "The Eiffel Tower grows about 15 cm taller in summer due to heat expansion! 🗼"
+      ]
+    },
+    {
+      "tag": "science",
+      "patterns": [
+        "tell me about science", "what is physics", "what is chemistry",
+        "explain biology", "science facts", "how does the universe work"
+      ],
+      "responses": [
+        "Physics explains how the universe behaves at every scale!",
+        "Chemistry is the study of matter and the changes it undergoes!",
+        "Biology is the science of life — from cells to ecosystems!",
+        "The universe is roughly 13.8 billion years old! 🌌"
+      ]
+    },
+    {
+      "tag": "space",
+      "patterns": [
+        "tell me about space", "facts about space", "how big is the universe",
+        "are there aliens", "tell me about planets", "what is a black hole",
+        "is there life on mars"
+      ],
+      "responses": [
+        "The observable universe is about 93 billion light-years in diameter! 🌌",
+        "A black hole is a region where gravity is so strong that nothing escapes!",
+        "Mars has the largest volcano in the solar system — Olympus Mons!",
+        "Scientists are still searching for signs of extraterrestrial life 👽"
+      ]
+    },
+    {
+      "tag": "animals",
+      "patterns": [
+        "tell me about animals", "animal facts", "what is the fastest animal",
+        "largest animal", "smartest animal", "favorite animal",
+        "interesting animal facts"
+      ],
+      "responses": [
+        "The cheetah is the fastest land animal, reaching 120 km/h! 🐆",
+        "The blue whale is the largest animal ever known to exist! 🐋",
+        "Dolphins are among the smartest animals, capable of using tools!",
+        "Crows can recognize human faces and hold grudges! 🐦"
+      ]
+    },
+    {
+      "tag": "history",
+      "patterns": [
+        "tell me about history", "historical fact", "what happened in history",
+        "tell me about ancient civilizations", "famous historical events"
+      ],
+      "responses": [
+        "The Great Wall of China took over 1,000 years to build! 🏯",
+        "Ancient Egyptians invented one of the earliest writing systems — hieroglyphics!",
+        "World War II (1939–1945) was the deadliest conflict in human history.",
+        "The Roman Empire lasted for over 1,000 years! 🏛️"
+      ]
+    },
+    {
+      "tag": "sports",
+      "patterns": [
+        "tell me about sports", "favorite sport", "do you like football",
+        "sports facts", "who is the best footballer", "cricket or football"
+      ],
+      "responses": [
+        "Football (soccer) is the world's most popular sport! ⚽",
+        "Usain Bolt ran 100m in 9.58 seconds — the world record! 🏃",
+        "Cricket has a massive following in South Asia and England! 🏏",
+        "The Olympics is the world's biggest multi-sport event! 🏅"
+      ]
+    },
+    {
+      "tag": "food_facts",
+      "patterns": [
+        "tell me about food", "food facts", "healthy food",
+        "what should i eat", "best foods", "nutrition tips"
+      ],
+      "responses": [
+        "Blueberries are one of the most antioxidant-rich foods! 🫐",
+        "Eating more vegetables and whole grains is great for long-term health!",
+        "Dark chocolate in moderation has heart health benefits! 🍫",
+        "Avocados are a great source of healthy fats! 🥑"
+      ]
+    },
+    {
+      "tag": "travel",
+      "patterns": [
+        "travel tips", "where should i travel", "best places to visit",
+        "i want to travel", "recommend a country", "travel advice"
+      ],
+      "responses": [
+        "Japan is amazing for culture, food, and tech! 🇯🇵",
+        "Iceland has breathtaking landscapes and the Northern Lights! 🌌",
+        "Always travel with travel insurance — better safe than sorry!",
+        "Learn a few phrases in the local language before you go 🌍"
+      ]
+    },
+    {
+      "tag": "books",
+      "patterns": [
+        "recommend a book", "what should i read", "best books",
+        "do you like books", "favorite book", "i want to read something"
+      ],
+      "responses": [
+        "Try 'Atomic Habits' by James Clear — life-changing! 📚",
+        "'The Alchemist' by Paulo Coelho is a beautiful journey!",
+        "For sci-fi, 'Dune' by Frank Herbert is a masterpiece!",
+        "'Thinking, Fast and Slow' by Kahneman will blow your mind!"
+      ]
+    },
+    {
+      "tag": "programming",
+      "patterns": [
+        "help me with coding", "programming tips", "how to learn programming",
+        "best programming language", "i want to code", "how to start coding",
+        "what is python"
+      ],
+      "responses": [
+        "Python is a great first language — simple and powerful! 🐍",
+        "Start with fundamentals: variables, loops, functions, and data structures!",
+        "Practice on platforms like LeetCode, HackerRank, or freeCodeCamp!",
+        "Build real projects — that's the fastest way to learn coding!"
+      ]
+    },
+    {
+      "tag": "apology",
+      "patterns": [
+        "i'm sorry", "sorry", "my apologies", "i apologize",
+        "forgive me", "i didn't mean that"
+      ],
+      "responses": [
+        "No worries at all! 😊",
+        "All good! Let's move on.",
+        "No need to apologize — we're all good here!"
+      ]
+    },
+    {
+      "tag": "bored",
+      "patterns": [
+        "i'm bored", "entertain me", "i have nothing to do",
+        "keep me busy", "boredom", "i'm so bored"
+      ],
+      "responses": [
+        "Ask me for a fun fact or a joke! 😄",
+        "Let's play 20 questions — think of something!",
+        "Try learning something new today — a language, a skill, anything!",
+        "How about reading a book or going for a walk? 🌿"
+      ]
+    },
+    {
+      "tag": "love",
+      "patterns": [
+        "i am in love", "i have a crush", "relationship advice",
+        "how do i tell someone i like them", "my heart is broken",
+        "i miss someone"
+      ],
+      "responses": [
+        "Love is beautiful — be honest about your feelings! 💙",
+        "Communication is the key to any healthy relationship!",
+        "Heartbreaks heal with time. Be kind to yourself 💙",
+        "If you miss someone, reach out — life is short!"
+      ]
+    },
+    {
+      "tag": "money",
+      "patterns": [
+        "how to save money", "financial tips", "i'm broke",
+        "how to invest", "how to manage money", "budgeting tips"
+      ],
+      "responses": [
+        "Track your expenses — awareness is the first step! 💰",
+        "Try the 50/30/20 rule: needs, wants, and savings!",
+        "Start an emergency fund before investing!",
+        "Avoid impulse buying — wait 24 hours before purchasing!"
+      ]
+    },
+    {
+      "tag": "default",
+      "patterns": [],
+      "responses": [
+        "I'm not sure I understand. Could you rephrase that?",
+        "Hmm, I didn't quite catch that. Can you elaborate?",
+        "Interesting! I'm still learning — try asking differently 😊",
+        "I don't have an answer for that yet, but I'm always improving!"
+      ]
+    }
+  ]
+}
