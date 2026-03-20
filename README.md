@@ -13,8 +13,6 @@ This project helped me understand how real-world conversational systems are desi
 * Text preprocessing using NLP techniques
 * Intent classification using Machine Learning
 * TF-IDF vectorization for text representation
-* Interactive chatbot interface
-* Supports multiple user queries with varied patterns
 * Improved understanding using n-grams
 
 ---
@@ -35,8 +33,6 @@ Chatbot/
 │
 ├── intents.json        # Dataset (intents, patterns, responses)
 ├── chatbot.ipynb       # Main implementation
-├── model.pkl           # Saved ML model
-├── vectorizer.pkl      # Saved TF-IDF vectorizer
 └── README.md
 ```
 
